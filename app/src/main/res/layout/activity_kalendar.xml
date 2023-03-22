@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color"
+    tools:context=".Kalendar">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalendár"
+            android:textColor="?text_color"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"/>
+
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="38dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="22dp"
+        android:background="#000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/settingsbtn"
+        android:layout_width="38dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/settings_icon" />
+
+    <ImageButton
+        android:id="@+id/kalendarbtn"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kalendar" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="80dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_left"
+                    android:backgroundTint="?background_color"
+                    android:textStyle="bold"
+                    android:textColor="?text_color"
+                    android:onClick="previousMonthAction"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/monthYearTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Január 2023"
+                    android:textColor="?text_color"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_right"
+                    android:backgroundTint="?background_color"
+                    android:textStyle="bold"
+                    android:textColor="?text_color"
+                    android:onClick="nextMonthAction"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="140dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PO"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="UT"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ST"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ŠT"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PI"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SO"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NE"
+                    android:textColor="?text_color"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarRecyclerView"
+            android:layout_width="600dp"
+            android:layout_height="470dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginBottom="85dp" />
+
+
+
+
+</RelativeLayout>

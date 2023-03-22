@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Prihláste sa"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#20ffffff"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/person"
+        android:hint="Email použivateľa"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/emaillogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#20ffffff"
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+        android:hint="Heslo"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logInBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/grey"
+        android:text="Prihlásiť sa" />
+
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="230dp"
+        android:text="Zaregistrovať sa"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/frgtpasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInBtn"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Zabudli ste heslo?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other"
+        android:layout_below="@id/registration"
+        android:layout_marginTop="150dp"
+        android:text="alebo sa prihláste cez"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/google_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/googlebtn"
+        android:scaleType="centerCrop"
+        android:background="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="680dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstrains" />
+
+
+
+
+</RelativeLayout>

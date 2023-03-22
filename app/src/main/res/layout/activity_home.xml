@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color"
+    tools:context=".Home">
+
+
+
+        <TextView
+            android:id="@+id/hometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hlavné menu"
+            android:textColor="?text_color"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"/>
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="42dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="660dp"
+            android:layout_marginBottom="21dp"
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/settingsbtn"
+            android:layout_width="41dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="660dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/background"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/settings_icon" />
+
+        <ImageButton
+            android:id="@+id/kalendarbtn"
+            android:layout_width="44dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="660dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/background"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/kalendar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/taskRecycleView"
+            android:layout_below="@id/hometext"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:src="@drawable/ic_baseline_add_32" />
+
+
+</RelativeLayout>

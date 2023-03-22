@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OP-TIME-IZE</string>
+    <string name="heslo" />
+    <string name="profile" />
+    <string name="arrow_left"><![CDATA[<-]]></string>
+    <string name="arrow_right"><![CDATA[->]]></string>
+    <string name="default_notification_channel_id" />
+</resources>

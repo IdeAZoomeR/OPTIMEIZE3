@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/SettingsLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color"
+    tools:context=".Settings">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nastavenia"
+        android:textColor="?text_color"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/darkbtn"
+        android:layout_marginTop="66dp"
+        android:layout_marginStart="350dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meno"
+        android:text="Meno"
+        android:textColor="?text_color"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="28sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="Email"
+        android:textColor="?text_color"
+        android:layout_below="@+id/meno"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="38dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="22dp"
+        android:background="#000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/settingsbtn"
+        android:layout_width="38dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/settings_icon" />
+
+    <ImageButton
+        android:id="@+id/kalendarbtn"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kalendar" />
+
+    <ImageButton
+        android:id="@+id/flashbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="350dp"
+        android:src="@drawable/ic_baseline_flashlight_on_24"
+        android:backgroundTint="@android:color/transparent"/>
+
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="Odhlásiť sa" />
+
+</RelativeLayout>
